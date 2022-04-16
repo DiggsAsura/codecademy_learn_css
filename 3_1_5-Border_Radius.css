@@ -1,35 +1,14 @@
 /* 
 3. The Box Model
 1. The Box Model
-4. Borders
+5. Border Radius
 */
 
-/*
-width - the thickness of the border. can be set in pixels or with one of the
-following keywords: thin, medium, thick.
+/* Border raduis to make rounded border corners
 
-style - The design of the border. Web browsers can render any of 10 different
-styles. Some of these styles include: none, dotted and solid.
-https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#values
-
-color - The color of the border. Web browsers can render colors using a few
-different formats including 140 built-in keywords.
-https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
-*/
-
-/*
-p {
-  border: 3px solid coral;
-}
-
-The default is 'medium none color'
-*/
-
-/*
-p.content-header {
-  height: 80px;
-  width: 240px;
-  border: solid coral;
+div.container {
+  border: 3px solid blue;
+  border-radius: 5px;
 }
 */
 
@@ -65,11 +44,13 @@ body {
 }
 
 #banner .content h1 {
+  border: solid 3px white;
   position: relative;
   top: 50px;
   width: 400px;
   margin: 0 auto;
-  border: 3px solid white;
+  /* Task */
+  border-radius: 15px;
 }
 
 #main {
@@ -86,6 +67,7 @@ h1 {
 }
 
 h2 {
+  border: dotted red;
   color: red;
   font-size: 14px;
   line-height: 48px;
@@ -139,4 +121,3 @@ p {
   border: 1px solid red;
   color: red;
 }
-
